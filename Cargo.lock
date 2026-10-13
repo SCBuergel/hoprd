@@ -609,7 +609,7 @@ dependencies = [
  "alloy-rlp",
  "alloy-serde",
  "alloy-sol-types",
- "itertools 0.14.0",
+ "itertools 0.13.0",
  "serde",
  "serde_json",
  "serde_with",
@@ -762,7 +762,7 @@ checksum = "8342aa5a7f8dee6d606307eebbc847d9799a823c7e4f37b9c1e32b08715f73c8"
 dependencies = [
  "alloy-json-rpc",
  "alloy-transport",
- "itertools 0.14.0",
+ "itertools 0.13.0",
  "reqwest",
  "serde_json",
  "tower",
@@ -2809,7 +2809,7 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "c54e03a951783e8b327515db3f2a2fd0e3bed362a96b066f341ce66ed49b4ead"
 dependencies = [
  "data-encoding",
- "syn 3.0.3",
+ "syn 1.0.109",
 ]
 
 [[package]]
@@ -5640,7 +5640,7 @@ dependencies = [
 
 [[package]]
 name = "hoprd"
-version = "4.1.2"
+version = "4.1.3"
 dependencies = [
  "anyhow",
  "async-signal",
@@ -6758,8 +6758,7 @@ dependencies = [
 [[package]]
 name = "libp2p-quic"
 version = "0.13.1"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "9dcc597d70bf7f6f30cbe07081802c836184e48416e89e9ce73a0ba2c56a319e"
+source = "git+https://github.com/SCBuergel/rust-libp2p?branch=jitter-fix#e29aa90f33ea65015f470371e9a3c61570890996"
 dependencies = [
  "futures",
  "futures-timer",
@@ -8285,7 +8284,7 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "b570b25f7617e43d59005d0990ccb79e950a423952cea19671b7a876da390adf"
 dependencies = [
  "anyhow",
- "itertools 0.14.0",
+ "itertools 0.10.5",
  "proc-macro2",
  "quote",
  "syn 2.0.119",
@@ -8346,8 +8345,7 @@ dependencies = [
 [[package]]
 name = "quinn-proto"
 version = "0.11.16"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "2f4bfc015262b9df63c8845072ce59068853ff5872180c2ce2f13038b970e560"
+source = "git+https://github.com/SCBuergel/quinn?branch=jitter-fix#e4f7f28a53ed8b0f0da13560c8e2818ffd5aa930"
 dependencies = [
  "aws-lc-rs",
  "bytes",
@@ -9955,7 +9953,7 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "32497e9a4c7b38532efcdebeef879707aa9f794296a4f0244f6f69e9bc8574bd"
 dependencies = [
  "fastrand",
- "getrandom 0.4.3",
+ "getrandom 0.3.4",
  "once_cell",
  "rustix",
  "windows-sys 0.61.2",
