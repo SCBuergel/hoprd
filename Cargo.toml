@@ -185,3 +185,24 @@ codegen-units = 16
 
 [workspace.metadata.cargo-shear]
 ignored = ["hopr-api"]
+
+# Quinn-only variant of the jitter fix on the same hoprnet base as the full candidate (release/4.0 @ e89c5462d6, taken from
+# the fork since a patch cannot name the source it replaces;
+# eleven commits past the 4.1.3 lock's 80a6324e): isolates the quinn change from the base difference in the A/B.
+[patch."https://github.com/hoprnet/hoprnet"]
+hopr-crypto-packet = { git = "https://github.com/SCBuergel/hoprnet", rev = "e89c5462d666e41b406f4da204b768a8bff493dd" }
+hopr-lib = { git = "https://github.com/SCBuergel/hoprnet", rev = "e89c5462d666e41b406f4da204b768a8bff493dd" }
+hopr-protocol-app = { git = "https://github.com/SCBuergel/hoprnet", rev = "e89c5462d666e41b406f4da204b768a8bff493dd" }
+hopr-protocol-hopr = { git = "https://github.com/SCBuergel/hoprnet", rev = "e89c5462d666e41b406f4da204b768a8bff493dd" }
+hopr-protocol-session = { git = "https://github.com/SCBuergel/hoprnet", rev = "e89c5462d666e41b406f4da204b768a8bff493dd" }
+hopr-protocol-start = { git = "https://github.com/SCBuergel/hoprnet", rev = "e89c5462d666e41b406f4da204b768a8bff493dd" }
+hopr-transport = { git = "https://github.com/SCBuergel/hoprnet", rev = "e89c5462d666e41b406f4da204b768a8bff493dd" }
+hopr-transport-mixer = { git = "https://github.com/SCBuergel/hoprnet", rev = "e89c5462d666e41b406f4da204b768a8bff493dd" }
+hopr-transport-probe = { git = "https://github.com/SCBuergel/hoprnet", rev = "e89c5462d666e41b406f4da204b768a8bff493dd" }
+hopr-transport-session = { git = "https://github.com/SCBuergel/hoprnet", rev = "e89c5462d666e41b406f4da204b768a8bff493dd" }
+hopr-transport-tag-allocator = { git = "https://github.com/SCBuergel/hoprnet", rev = "e89c5462d666e41b406f4da204b768a8bff493dd" }
+hopr-utils-session = { git = "https://github.com/SCBuergel/hoprnet", rev = "e89c5462d666e41b406f4da204b768a8bff493dd" }
+
+[patch.crates-io]
+libp2p-quic = { git = "https://github.com/SCBuergel/rust-libp2p", branch = "jitter-fix" }
+quinn-proto = { git = "https://github.com/SCBuergel/quinn", branch = "jitter-fix" }
