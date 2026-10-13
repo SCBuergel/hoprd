@@ -185,3 +185,10 @@ codegen-units = 16
 
 [workspace.metadata.cargo-shear]
 ignored = ["hopr-api"]
+
+# Quinn-only variant of the jitter fix (2026-10-13): loss detection that tolerates reordering and a floor under
+# cubic's congestion window, plus the libp2p-quic wiring that reads them from HOPR_INTERNAL_QUIC_* environment
+# variables. Nothing else changes; with the variables unset the behaviour is stock.
+[patch.crates-io]
+libp2p-quic = { git = "https://github.com/SCBuergel/rust-libp2p", branch = "jitter-fix" }
+quinn-proto = { git = "https://github.com/SCBuergel/quinn", branch = "jitter-fix" }
