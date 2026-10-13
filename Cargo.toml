@@ -185,3 +185,25 @@ codegen-units = 16
 
 [workspace.metadata.cargo-shear]
 ignored = ["hopr-api"]
+
+# Jitter fix candidate (2026-10-13): QUIC loss detection and congestion-window floor, session and SURB fixes.
+# Every change is behind HOPR_INTERNAL_* environment knobs; see the branch notes in each fork.
+[patch."https://github.com/hoprnet/hoprnet"]
+hopr-crypto-packet = { git = "https://github.com/SCBuergel/hoprnet", branch = "jitter-fix" }
+hopr-lib = { git = "https://github.com/SCBuergel/hoprnet", branch = "jitter-fix" }
+hopr-protocol-app = { git = "https://github.com/SCBuergel/hoprnet", branch = "jitter-fix" }
+hopr-protocol-hopr = { git = "https://github.com/SCBuergel/hoprnet", branch = "jitter-fix" }
+hopr-protocol-session = { git = "https://github.com/SCBuergel/hoprnet", branch = "jitter-fix" }
+hopr-protocol-start = { git = "https://github.com/SCBuergel/hoprnet", branch = "jitter-fix" }
+hopr-transport = { git = "https://github.com/SCBuergel/hoprnet", branch = "jitter-fix" }
+hopr-transport-mixer = { git = "https://github.com/SCBuergel/hoprnet", branch = "jitter-fix" }
+hopr-transport-probe = { git = "https://github.com/SCBuergel/hoprnet", branch = "jitter-fix" }
+hopr-transport-session = { git = "https://github.com/SCBuergel/hoprnet", branch = "jitter-fix" }
+hopr-transport-tag-allocator = { git = "https://github.com/SCBuergel/hoprnet", branch = "jitter-fix" }
+hopr-utils-session = { git = "https://github.com/SCBuergel/hoprnet", branch = "jitter-fix" }
+
+[patch.crates-io]
+hopr-transport-p2p = { git = "https://github.com/SCBuergel/hopr-impls", branch = "feat/p2p-quic-timeouts" }
+hopr-utilities = { git = "https://github.com/SCBuergel/hopr-utilities", branch = "jitter-fix" }
+libp2p-quic = { git = "https://github.com/SCBuergel/rust-libp2p", branch = "jitter-fix" }
+quinn-proto = { git = "https://github.com/SCBuergel/quinn", branch = "jitter-fix" }
