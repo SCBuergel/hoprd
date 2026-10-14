@@ -609,7 +609,7 @@ dependencies = [
  "alloy-rlp",
  "alloy-serde",
  "alloy-sol-types",
- "itertools 0.13.0",
+ "itertools 0.14.0",
  "serde",
  "serde_json",
  "serde_with",
@@ -762,7 +762,7 @@ checksum = "8342aa5a7f8dee6d606307eebbc847d9799a823c7e4f37b9c1e32b08715f73c8"
 dependencies = [
  "alloy-json-rpc",
  "alloy-transport",
- "itertools 0.13.0",
+ "itertools 0.14.0",
  "reqwest",
  "serde_json",
  "tower",
@@ -5135,7 +5135,7 @@ dependencies = [
 [[package]]
 name = "hopr-crypto-packet"
 version = "1.4.0"
-source = "git+https://github.com/SCBuergel/hoprnet?branch=jitter-fix#dc81adccbbd19d596b03cc4a6d3aa2e6c2b52a50"
+source = "git+https://github.com/SCBuergel/hoprnet?branch=jitter-fix#f002f158f4a758d80c64aa3b0f129be0e2fc4fe4"
 dependencies = [
  "bimap",
  "const-hex",
@@ -5171,7 +5171,7 @@ dependencies = [
 [[package]]
 name = "hopr-lib"
 version = "4.0.5"
-source = "git+https://github.com/SCBuergel/hoprnet?branch=jitter-fix#dc81adccbbd19d596b03cc4a6d3aa2e6c2b52a50"
+source = "git+https://github.com/SCBuergel/hoprnet?branch=jitter-fix#f002f158f4a758d80c64aa3b0f129be0e2fc4fe4"
 dependencies = [
  "anyhow",
  "async-broadcast",
@@ -5232,7 +5232,7 @@ dependencies = [
 [[package]]
 name = "hopr-protocol-app"
 version = "1.1.0"
-source = "git+https://github.com/SCBuergel/hoprnet?branch=jitter-fix#dc81adccbbd19d596b03cc4a6d3aa2e6c2b52a50"
+source = "git+https://github.com/SCBuergel/hoprnet?branch=jitter-fix#f002f158f4a758d80c64aa3b0f129be0e2fc4fe4"
 dependencies = [
  "hopr-crypto-packet",
  "hopr-types",
@@ -5245,7 +5245,7 @@ dependencies = [
 [[package]]
 name = "hopr-protocol-hopr"
 version = "6.2.0"
-source = "git+https://github.com/SCBuergel/hoprnet?branch=jitter-fix#dc81adccbbd19d596b03cc4a6d3aa2e6c2b52a50"
+source = "git+https://github.com/SCBuergel/hoprnet?branch=jitter-fix#f002f158f4a758d80c64aa3b0f129be0e2fc4fe4"
 dependencies = [
  "anyhow",
  "async-trait",
@@ -5274,7 +5274,7 @@ dependencies = [
 [[package]]
 name = "hopr-protocol-session"
 version = "1.5.0"
-source = "git+https://github.com/SCBuergel/hoprnet?branch=jitter-fix#dc81adccbbd19d596b03cc4a6d3aa2e6c2b52a50"
+source = "git+https://github.com/SCBuergel/hoprnet?branch=jitter-fix#f002f158f4a758d80c64aa3b0f129be0e2fc4fe4"
 dependencies = [
  "aquamarine",
  "asynchronous-codec",
@@ -5305,7 +5305,7 @@ dependencies = [
 [[package]]
 name = "hopr-protocol-start"
 version = "1.1.0"
-source = "git+https://github.com/SCBuergel/hoprnet?branch=jitter-fix#dc81adccbbd19d596b03cc4a6d3aa2e6c2b52a50"
+source = "git+https://github.com/SCBuergel/hoprnet?branch=jitter-fix#f002f158f4a758d80c64aa3b0f129be0e2fc4fe4"
 dependencies = [
  "aquamarine",
  "flagset",
@@ -5393,7 +5393,7 @@ dependencies = [
 [[package]]
 name = "hopr-transport"
 version = "0.48.6"
-source = "git+https://github.com/SCBuergel/hoprnet?branch=jitter-fix#dc81adccbbd19d596b03cc4a6d3aa2e6c2b52a50"
+source = "git+https://github.com/SCBuergel/hoprnet?branch=jitter-fix#f002f158f4a758d80c64aa3b0f129be0e2fc4fe4"
 dependencies = [
  "ahash",
  "anyhow",
@@ -5437,7 +5437,7 @@ dependencies = [
 [[package]]
 name = "hopr-transport-mixer"
 version = "0.4.1"
-source = "git+https://github.com/SCBuergel/hoprnet?branch=jitter-fix#dc81adccbbd19d596b03cc4a6d3aa2e6c2b52a50"
+source = "git+https://github.com/SCBuergel/hoprnet?branch=jitter-fix#f002f158f4a758d80c64aa3b0f129be0e2fc4fe4"
 dependencies = [
  "futures",
  "futures-timer",
@@ -5478,7 +5478,7 @@ dependencies = [
 [[package]]
 name = "hopr-transport-probe"
 version = "0.8.0"
-source = "git+https://github.com/SCBuergel/hoprnet?branch=jitter-fix#dc81adccbbd19d596b03cc4a6d3aa2e6c2b52a50"
+source = "git+https://github.com/SCBuergel/hoprnet?branch=jitter-fix#f002f158f4a758d80c64aa3b0f129be0e2fc4fe4"
 dependencies = [
  "anyhow",
  "async-trait",
@@ -5504,7 +5504,7 @@ dependencies = [
 [[package]]
 name = "hopr-transport-session"
 version = "0.30.3"
-source = "git+https://github.com/SCBuergel/hoprnet?branch=jitter-fix#dc81adccbbd19d596b03cc4a6d3aa2e6c2b52a50"
+source = "git+https://github.com/SCBuergel/hoprnet?branch=jitter-fix#f002f158f4a758d80c64aa3b0f129be0e2fc4fe4"
 dependencies = [
  "anyhow",
  "async-trait",
@@ -5536,7 +5536,7 @@ dependencies = [
 [[package]]
 name = "hopr-transport-tag-allocator"
 version = "0.1.1"
-source = "git+https://github.com/SCBuergel/hoprnet?branch=jitter-fix#dc81adccbbd19d596b03cc4a6d3aa2e6c2b52a50"
+source = "git+https://github.com/SCBuergel/hoprnet?branch=jitter-fix#f002f158f4a758d80c64aa3b0f129be0e2fc4fe4"
 dependencies = [
  "hopr-protocol-app",
  "serde",
@@ -5649,7 +5649,7 @@ dependencies = [
 [[package]]
 name = "hopr-utils-session"
 version = "1.2.1"
-source = "git+https://github.com/SCBuergel/hoprnet?branch=jitter-fix#dc81adccbbd19d596b03cc4a6d3aa2e6c2b52a50"
+source = "git+https://github.com/SCBuergel/hoprnet?branch=jitter-fix#f002f158f4a758d80c64aa3b0f129be0e2fc4fe4"
 dependencies = [
  "anyhow",
  "async-trait",
@@ -5968,7 +5968,7 @@ dependencies = [
  "libc",
  "percent-encoding",
  "pin-project-lite",
- "socket2 0.6.5",
+ "socket2 0.5.10",
  "system-configuration",
  "tokio",
  "tower-service",
@@ -6793,7 +6793,7 @@ dependencies = [
 [[package]]
 name = "libp2p-quic"
 version = "0.13.1"
-source = "git+https://github.com/SCBuergel/rust-libp2p?branch=jitter-fix#e29aa90f33ea65015f470371e9a3c61570890996"
+source = "git+https://github.com/SCBuergel/rust-libp2p?branch=jitter-fix#9b41aa58483ef7a9d75ecfc0695493688f7ff510"
 dependencies = [
  "futures",
  "futures-timer",
@@ -8319,7 +8319,7 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "b570b25f7617e43d59005d0990ccb79e950a423952cea19671b7a876da390adf"
 dependencies = [
  "anyhow",
- "itertools 0.13.0",
+ "itertools 0.14.0",
  "proc-macro2",
  "quote",
  "syn 2.0.119",
@@ -8370,7 +8370,7 @@ dependencies = [
  "quinn-udp 0.5.15",
  "rustc-hash",
  "rustls",
- "socket2 0.6.5",
+ "socket2 0.5.10",
  "thiserror 2.0.20",
  "tokio",
  "tracing",
@@ -8380,7 +8380,7 @@ dependencies = [
 [[package]]
 name = "quinn-proto"
 version = "0.11.16"
-source = "git+https://github.com/SCBuergel/quinn?branch=jitter-fix#e4f7f28a53ed8b0f0da13560c8e2818ffd5aa930"
+source = "git+https://github.com/SCBuergel/quinn?branch=jitter-fix#40155a483748368e2deb92668377d4c704d0493d"
 dependencies = [
  "aws-lc-rs",
  "bytes",
@@ -8409,7 +8409,7 @@ dependencies = [
  "cfg_aliases",
  "libc",
  "once_cell",
- "socket2 0.6.5",
+ "socket2 0.5.10",
  "tracing",
  "windows-sys 0.61.2",
 ]
@@ -8422,7 +8422,7 @@ checksum = "76150b617afc75e6e21ac5f39bc196e80b65415ae48d62dbef8e2519d040ce42"
 dependencies = [
  "cfg_aliases",
  "libc",
- "socket2 0.6.5",
+ "socket2 0.5.10",
  "windows-sys 0.61.2",
 ]
 
@@ -10017,7 +10017,7 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "32497e9a4c7b38532efcdebeef879707aa9f794296a4f0244f6f69e9bc8574bd"
 dependencies = [
  "fastrand",
- "getrandom 0.3.4",
+ "getrandom 0.4.3",
  "once_cell",
  "rustix",
  "windows-sys 0.61.2",
